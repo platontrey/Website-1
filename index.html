@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Мои Цели</title>
+    <link rel="stylesheet" href="Styles\style.css">
+</head>
+<body>
+    <button class="color-switcher" id="themeToggle">Сменить тему</button>
+
+    <h1>Мои Цели</h1>
+
+    <div class="block">
+      <ol>
+          <li>Изучить новый язык программирования</li>
+          <li>Путешествовать по миру</li>
+          <li>Стать лучшей версией себя</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <p>В жизни важно ставить цели. Как сказал кто-то: <q>Цели - это мечты с дедлайнами</q>.</p>
+      <p>Я стремлюсь к <strong>успеху</strong>, <em>творчеству</em> и <span style="color: blue;">инновациям</span>.</p>
+    </div>
+
+    <script>
+      const btn = document.getElementById('themeToggle');
+      btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+      });
+    </script>
+</body>
+</html>
